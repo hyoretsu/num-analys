@@ -1,0 +1,23 @@
+{
+	"bisection": "Bisseção",
+	"custom": "Autorais",
+	"doolittleLuDecomposition": "Método de Doolittle (decomposição LU)",
+	"falsePosition": "Falsa posição",
+	"functionZeros": "Zeros de função",
+	"gaussianElimination": "Eliminação de Gauss",
+	"gaussJacobi": "Gauss-Jacobi",
+	"gaussSeidel": "Gauss-Seidel",
+	"integration": "Integração",
+	"interpolation": "Interpolação",
+	"lagrangeInterpolation": "Interpolação de Lagrange",
+	"linearSystems": "Sistemas Lineares",
+	"luComposition": "Composição LU",
+	"minMaxBisection": "Bisseção máximo-mínimo",
+	"newtonInterpolation": "Interpolação de Newton",
+	"newtonRaphson": "Newton-Raphson",
+	"secant": "Secante",
+	"simpsonRule13": "Regra 1/3 de Simpson",
+	"spectralRadius": "Raio espectral",
+	"trapezoidalRule": "Regra dos trapézios",
+	"vandermondeInterpolation": "Interpolação usando uma matriz Vandermonde"
+}

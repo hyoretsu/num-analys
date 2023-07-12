@@ -1,0 +1,32 @@
+{
+	"expo": {
+		"version": "1.0.0",
+		"android": {
+			"adaptiveIcon": {
+				"backgroundColor": "#ffffff",
+				"foregroundImage": "./src/assets/adaptive-icon.png"
+			},
+			"package": "com.hyoretsu.numanalysis"
+		},
+		"experiments": {
+			"typedRoutes": true
+		},
+		"icon": "./src/assets/icon.png",
+		"ios": {
+			"bundleIdentifier": "com.hyoretsu.numanalysis"
+		},
+		"name": "NumAnalysis",
+		"orientation": "portrait",
+		"platforms": ["android", "ios"],
+		"scheme": "numanalysis",
+		"slug": "numanalysis",
+		"splash": {
+			"image": "./src/assets/splash.png",
+			"backgroundColor": "#ffffff"
+		},
+		"runtimeVersion": {
+			"policy": "sdkVersion"
+		},
+		"plugins": ["expo-localization", "expo-router"]
+	}
+}
