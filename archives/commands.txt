@@ -1,12 +1,3 @@
-corepack prepare --activate pnpm@8.6.7
-pnpm config set auto-install-peers true
-
-pnpx create-expo-app NumericalAnalysis -template tabs@sdk-49
-
-pnpx expo install react-native-svg
-pnpm i rn-css
-pnpm i -D react-native-svg-transformer
-
 pnpm i numerical-methods
 
 pnpm i formik yup

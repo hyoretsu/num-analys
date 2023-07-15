@@ -8,6 +8,6 @@ const i18n = new I18n({
 	en,
 	pt,
 });
-i18n.locale = getLocales()[0].languageCode;
+i18n.locale = getLocales()[0].regionCode;
 
 export default i18n;

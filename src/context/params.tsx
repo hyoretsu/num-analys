@@ -1,28 +1,24 @@
-import { createContext, PropsWithChildren, useContext, useMemo, useState } from 'react';
+import { createContext, PropsWithChildren, useContext, useMemo, useState } from "react";
 
-
-
-interface ParamsContext {
-    : ;
-}
-
-const ParamsContext = createContext<ParamsContext>({} as ParamsContext);
+const ParamsContext = createContext({});
 
 export const ParamsProvider: React.FC<PropsWithChildren> = ({ children }) => {
-    const [, set] = useState<>();
+	const [params, setParams] = useState({
+		func: "",
+		pointN: 0,
+		x: [0, 0],
+	});
 
+	const paramsData = useMemo(() => ({ params, setParams }), [params, setParams]);
 
-
-    const params: ParamsContext = useMemo(() => ({  }), []);
-
-    return <ParamsContext.Provider value={params}>{children}</ParamsContext.Provider>;
+	return <ParamsContext.Provider value={paramsData}>{children}</ParamsContext.Provider>;
 };
 
-export const useParams = (): ParamsContext => {
-    const context = useContext(ParamsContext);
-    if (!context) {
-        throw new Error('useParams must be used within an ParamsProvider');
-    }
+export const useParams = () => {
+	const context = useContext(ParamsContext);
+	if (!context) {
+		throw new Error("useParams must be used within an ParamsProvider");
+	}
 
-    return context;
+	return context;
 };

@@ -3,8 +3,10 @@ import { Slot, SplashScreen } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 // import { useEffect } from "react";
 // import { Text, useColorScheme } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 // import { ThemeProvider } from "rn-css";
 
+import { ParamsProvider } from "@context/params";
 import mainTheme from "@theme";
 
 SplashScreen.preventAutoHideAsync();
@@ -35,12 +37,14 @@ const HomeLayout: React.FC = () => {
 	// }
 
 	return (
-		<>
+		<ParamsProvider>
 			{/* <ThemeProvider theme={mainTheme}> */}
-			<StatusBar backgroundColor={mainTheme.colors.background} style="dark" />
-			<Slot />
+			<SafeAreaView>
+				<StatusBar backgroundColor={mainTheme.colors.background} style="dark" />
+				<Slot />
+			</SafeAreaView>
 			{/* </ThemeProvider> */}
-		</>
+		</ParamsProvider>
 	);
 };
 
